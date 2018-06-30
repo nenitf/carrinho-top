@@ -9,7 +9,7 @@
           <p class="help">nome produto</p>
         </div>
         <div class="column is-one-third has-text-centered">
-          <button type="button" class="button is-success" @click='novo'><i class="fas fa-cart-plus"></i></button>
+          <button type="button" class="button is-success" @click='novo'><span class="icon-cart-plus"></span></button>
         </div>
       </div>
 
@@ -82,5 +82,8 @@ export default {
 .box{
   padding: 1rem 0 .2rem;
   margin-bottom: 1.2rem !important;
+}
+.icon-cart-plus{
+  font-size: 1.5rem;
 }
 </style>

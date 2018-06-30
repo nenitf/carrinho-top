@@ -8,7 +8,7 @@
           <input type="text" class='input' v-model='produto.nome' @change='muda'>
         </div>
         <div class="column is-one-third has-text-centered">
-          <button type="button" class="button is-danger" @click='apaga'><i class="fas fa-trash-alt"></i></button>
+          <button type="button" class="button is-danger" @click='apaga'><span class="icon-close"></span></button>
         </div>
       </div>
 
@@ -70,5 +70,8 @@ export default {
 }
 .box-color{
   background-color: rgba(255,255,255,0.7);
+}
+.icon-close{
+  font-size: 1.5rem;
 }
 </style>
