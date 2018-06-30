@@ -1,0 +1,3 @@
+.hero.is-fullheight .hero-body, .hero.is-halfheight .hero-body {
+    align-items: baseline !important;
+  }
