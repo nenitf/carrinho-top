@@ -4,11 +4,11 @@
     <itemNovo @novo='novo'></itemNovo>
     <item v-for='(produto, i) in produtos' :key='i' :produto='produto' @apaga='apaga(i)' @muda='muda(i)'></item>
 
-<button type="button" class="button is-small is-warning" @click='mostraDados = !mostraDados'>mostrar dados</button>
-<div v-show='mostraDados'>
-  <input type="text" v-model='JSON.stringify(produtos)'>
-  <pre>{{produtos}}</pre>
-</div>
+    <button type="button" class="button is-small is-warning" @click='mostraDados = !mostraDados'>mostrar dados</button>
+    <div v-show='mostraDados'>
+      <input type="text" v-model='JSON.stringify(produtos)'>
+      <pre>{{produtos}}</pre>
+    </div>
 
   </div>
 </template>

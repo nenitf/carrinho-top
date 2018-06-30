@@ -20,19 +20,19 @@
           <input type="number" class='input' v-model='preco' @change='calculaPrecoTotal'>
           <p class="help">preço un R$</p>
         </div>
-      <div class="column">
-        <input type="number" class='input' v-model='qtd' @change='calculaPrecoTotal'>
-        <p class="help">quantidade</p>
+        <div class="column">
+          <input type="number" class='input' v-model='qtd' @change='calculaPrecoTotal'>
+          <p class="help">quantidade</p>
+        </div>
+        <div class="column">
+          <input type="number" class='input' v-model='precoTotal' disabled>
+          <p class="help">preço total R$</p>
+        </div>
+
       </div>
-    <div class="column">
-      <input type="number" class='input' v-model='precoTotal' disabled>
-      <p class="help">preço total R$</p>
     </div>
 
   </div>
-</div>
-
-</div>
 </template>
 
 <script>
