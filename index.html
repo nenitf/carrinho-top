@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="src/assets/css/style.css">
   <title>cartop</title>
 </head>
-<body>
+<body onbeforeunload="return myFunction()">
 
   <section class="hero is-danger is-fullheight">
     <div class="hero-body">
@@ -20,5 +20,10 @@
 
 
   <script src="dist/build.js"></script>
+  <script>
+    function myFunction() {
+      return "";
+    }
+  </script>
 </body>
 </html>

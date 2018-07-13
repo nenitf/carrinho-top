@@ -2,7 +2,6 @@
 
   <div class="box box-color columns is-mobile">
     <div class="column">
-
       <div class="columns is-mobile">
         <div class="column">
           <input type="text" class='input' v-model='produto.nome' @change='muda'>
