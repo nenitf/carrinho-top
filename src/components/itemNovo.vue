@@ -5,8 +5,7 @@
 
       <div class="columns is-mobile">
         <div class="column">
-          <input type="text" class='input' v-model='nome'>
-          <p class="help">nome produto</p>
+          <input type="text" class='input' v-model='nome' @focus="$event.target.select()">
         </div>
         <div class="column is-one-third has-text-centered">
           <button type="button" class="button is-success" @click='novo'><span class="icon-cart-plus"></span></button>
@@ -17,11 +16,11 @@
       <div class="columns is-gapless is-mobile">
 
         <div class="column">
-          <input type="number" class='input' v-model='preco' @change='calculaPrecoTotal'>
+          <input type="number" class='input' v-model='preco' @change='calculaPrecoTotal' @focus="$event.target.select()">
           <p class="help">preço un R$</p>
         </div>
         <div class="column">
-          <input type="number" class='input' v-model='qtd' @change='calculaPrecoTotal'>
+          <input type="number" class='input' v-model='qtd' @change='calculaPrecoTotal' @focus="$event.target.select()">
           <p class="help">quantidade</p>
         </div>
         <div class="column">
@@ -39,10 +38,10 @@
 export default {
   data () {
     return {
-      nome: null,
-      preco: null,
+      nome: "nome do produto",
+      preco: 0,
       qtd: 1,
-      precoTotal: null,
+      precoTotal: 0,
     }
   },
   methods:{
@@ -57,10 +56,10 @@ export default {
       this.resetaCampos();
     },
     resetaCampos(){
-      this.nome = null;
-      this.preco = null;
+      this.nome = "nome do produto";
+      this.preco = 0;
       this.qtd = 1;
-      this.precoTotal = null;
+      this.precoTotal = 0;
     },
     calculaPrecoTotal(){
       this.precoTotal = this.preco * this.qtd;

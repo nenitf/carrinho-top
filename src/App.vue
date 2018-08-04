@@ -2,26 +2,20 @@
   <div id="app">
     <painel :produtos='produtos' :precoTotal='precoTotal'></painel>
     <itemNovo @novo='novo'></itemNovo>
-    <item v-for='(produto, i) in produtos' :key='i' :produto='produto' @apaga='apaga(i)' @muda='muda(i)'></item>
-
-    <button type="button" class="button is-small is-warning" @click='mostraDados = !mostraDados'>mostrar dados</button>
-    <div v-show='mostraDados'>
-      <input type="text" v-model='JSON.stringify(produtos)'>
-      <pre>{{produtos}}</pre>
-    </div>
-
+    <p class="help has-text-black-ter">Clique duas vezes no item desejado para excluí-lo</p>
+    <ul class="lista-produtos">
+      <li v-for='(produto, i) in produtos' :key='i' @dblclick='apaga(i)'>{{produto.nome}}; <span class="valor-total has-text-black-ter">R$ {{produto.precoTotal}}</span></li>
+    </ul>
   </div>
 </template>
 
 <script>
 import painel from './components/painel.vue';
 import itemNovo from './components/itemNovo.vue';
-import item from './components/item.vue';
 export default {
   components: {
     'painel': painel,
-    'itemNovo': itemNovo,
-    'item': item
+    'itemNovo': itemNovo
   },
   name: 'app',
   data () {
@@ -56,4 +50,17 @@ export default {
 </script>
 
 <style>
+.lista-produtos{
+  list-style: decimal !important;
+}
+
+.lista-produtos li {
+  margin-top: 1rem;
+  margin-left: 1rem !important;
+  background-color: gray;
+}
+
+.valor-total{
+  font-weight: bold;
+}
 </style>
