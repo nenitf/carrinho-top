@@ -1,18 +1,33 @@
-# carrinho top :shopping_cart: :top:
+# rancho
 
-> A Vue.js project
+## Setup
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+```sh
+yarn
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Run
+
+```sh
+yarn start
+```
+
+## Test
+
+- Unidade e integração
+
+```sh
+yarn test
+```
+
+- E2E
+
+```sh
+yarn cy:run
+```
+
+- CI
+
+```sh
+yarn CI
+```
