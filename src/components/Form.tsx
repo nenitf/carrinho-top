@@ -113,6 +113,7 @@ export default function C() {
           <NumberInput
             defaultValue={1}
             value={quantidade}
+            w="50%"
             onChange={s => handleChangeQuantidade(s)}
             onFocus={handleFocus}
             min={1}
