@@ -1,34 +1,24 @@
-const itens = [
-  {
-    id: 1,
-    nome: "titulo",
-    valor: 1.10,
-    quantidade: 2,
-    total: 2.20
-  },
-  {
-    id: 2,
-    nome: "titulo",
-    valor: 1.10,
-    quantidade: 2,
-    total: 2.20
-  },
-  {
-    id: 3,
-    nome: "titulo",
-    valor: 1.10,
-    quantidade: 2,
-    total: 2.20
-  },
-]
+import { useCarrinho } from 'contexts/carrinho'
 
-export function Carrinho() {
-  const format = (p: number) => new Intl.NumberFormat('pt', { style: 'currency', currency: 'BRL'}).format(p)
+import { formataEmReais } from 'helpers'
+
+export default function C() {
+  const { items, setItems } = useCarrinho();
+
+  function handleDeletaItem(
+    e: React.MouseEvent<HTMLLIElement>, id: number
+  ) {
+    if(e.detail === 3) {
+      const restantes = items.filter(i => i.id !== id);
+      setItems(restantes);
+    }
+  }
+
   return (
     <ol>
-      {itens.map(i => (
-        <li key={i.id}>
-          {i.nome} {i.quantidade}x{format(i.valor)} = <strong>{format(i.total)}</strong>
+      {items.map(i => (
+        <li key={i.id} onClick={(e) => handleDeletaItem(e, i.id)}>
+          {i.nome} {i.quantidade}x{formataEmReais(i.preco)} = <strong>{formataEmReais(i.total)}</strong>
         </li>
       ))}
     </ol>
