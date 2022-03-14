@@ -9,10 +9,6 @@ import {
   Button,
   Stack,
   HStack,
-  FormLabel,
-  InputLeftAddon,
-  InputGroup,
-  InputLeftElement,
   Icon
 } from "@chakra-ui/react"
 import { BsFillCartPlusFill } from 'react-icons/bs';

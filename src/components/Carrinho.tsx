@@ -1,17 +1,20 @@
 const itens = [
   {
+    id: 1,
     nome: "titulo",
     valor: 1.10,
     quantidade: 2,
     total: 2.20
   },
   {
+    id: 2,
     nome: "titulo",
     valor: 1.10,
     quantidade: 2,
     total: 2.20
   },
   {
+    id: 3,
     nome: "titulo",
     valor: 1.10,
     quantidade: 2,
@@ -24,7 +27,7 @@ export function Carrinho() {
   return (
     <ol>
       {itens.map(i => (
-        <li>
+        <li key={i.id}>
           {i.nome} {i.quantidade}x{format(i.valor)} = <strong>{format(i.total)}</strong>
         </li>
       ))}

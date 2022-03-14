@@ -1,4 +1,4 @@
-import { ChakraProvider, Flex, Stack } from "@chakra-ui/react"
+import { ChakraProvider, Flex } from "@chakra-ui/react"
 import { Form } from "components/Form"
 import { Carrinho } from "components/Carrinho"
 import { theme } from 'styles/theme'
