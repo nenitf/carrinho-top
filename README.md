@@ -1,18 +1,23 @@
-# carrinho top :shopping_cart: :top:
+# rancho
 
-> A Vue.js project
+[![emojicom](https://img.shields.io/badge/emojicom-%F0%9F%90%9B%20%F0%9F%86%95%20%F0%9F%92%AF%20%F0%9F%91%AE%20%F0%9F%86%98%20%F0%9F%92%A4-%23fff)](http://neni.dev/emojicom)
 
-## Build Setup
+Auxiliar de lista de compras
 
-``` bash
-# install dependencies
-npm install
+## Desenvolvimento
 
-# serve with hot reload at localhost:8080
-npm run dev
+1. Inicie o ambiente 
+    ```sh
+    docker-compose up -d
+    ```
 
-# build for production with minification
-npm run build
-```
+    > Pare o ambiente com ``docker-compose down``
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+    > Para comandos do yarn utilize ``docker-compose exec app yarn <complemento>``
+
+2. Inicie o servidor
+    ```sh
+    docker-compose exec app yarn start
+    ```
+
+3. Acesse `localhost:3000`
