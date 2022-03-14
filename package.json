@@ -1,5 +1,6 @@
 {
   "name": "rancho",
+  "homepage": "http://neni.dev/rancho",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
