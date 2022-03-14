@@ -41,6 +41,7 @@ export function Form() {
 
         <HStack>
           <NumberInput
+            width="100%"
             min={0}
             bg="blue.50"
             borderRadius={4}
@@ -51,6 +52,7 @@ export function Form() {
           </NumberInput>
 
           <NumberInput
+            width="100%"
             defaultValue={1}
             min={1}
             bg="blue.50"
