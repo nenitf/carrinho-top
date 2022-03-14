@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/rancho/static/js/main.8cac29ff.chunk.js",
+    "main.js.map": "/rancho/static/js/main.8cac29ff.chunk.js.map",
+    "runtime-main.js": "/rancho/static/js/runtime-main.cbabaff0.js",
+    "runtime-main.js.map": "/rancho/static/js/runtime-main.cbabaff0.js.map",
+    "static/js/2.842c135d.chunk.js": "/rancho/static/js/2.842c135d.chunk.js",
+    "static/js/2.842c135d.chunk.js.map": "/rancho/static/js/2.842c135d.chunk.js.map",
+    "static/js/3.1b27c566.chunk.js": "/rancho/static/js/3.1b27c566.chunk.js",
+    "static/js/3.1b27c566.chunk.js.map": "/rancho/static/js/3.1b27c566.chunk.js.map",
+    "index.html": "/rancho/index.html",
+    "service-worker.js": "/rancho/service-worker.js",
+    "service-worker.js.map": "/rancho/service-worker.js.map",
+    "static/js/2.842c135d.chunk.js.LICENSE.txt": "/rancho/static/js/2.842c135d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbabaff0.js",
+    "static/js/2.842c135d.chunk.js",
+    "static/js/main.8cac29ff.chunk.js"
+  ]
+}
